@@ -17,7 +17,7 @@
  *    shallowCopy({a: 2, b: { a: [1, 2, 3]}}) => {a: 2, b: { a: [1, 2, 3]}}
  *    shallowCopy({}) => {}
  */
-// eslint-disable-next-line prefer-object-spread
+
 function shallowCopy(obj) {
   return Object.assign({}, obj);
 }
