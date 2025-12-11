@@ -56,14 +56,14 @@ function mergeObjects(objects) {
  *
  */
 function removeProperties(obj, keys) {
-  for (let key in obj) {
-    for (let item of keys) {
-      if (key === item) {
-        delete obj[key];
-      }
+  const res = { ...obj };
+  Object.keys(res).forEach((key) => {
+    if (keys.includes(key)) {
+      delete res[key];
     }
-  }
-  return obj;
+  });
+
+  return res;
 }
 
 /**
