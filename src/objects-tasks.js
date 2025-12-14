@@ -18,8 +18,8 @@
  *    shallowCopy({}) => {}
  */
 
-function shallowCopy(obj) {
-  return Object.assign({}, obj);
+function shallowCopy(/* obj */) {
+  throw new Error('Not implemented');
 }
 
 /**
